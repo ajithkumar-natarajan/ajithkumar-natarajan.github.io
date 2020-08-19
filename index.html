@@ -32,7 +32,7 @@
   </script> -->
   
   <!-- Script for LinkedIn profile integration -->
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
 	
 
     <meta charset="utf-8">
@@ -85,6 +85,21 @@
         left: 0px;
         opacity: 0.3;
   }
+
+  /* To disable opening image in new tab on right click */
+  .img-container {
+  position: relative;
+  }
+
+  .img-container:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+  }
   </style>  
 
   <body id="page-top">
@@ -92,7 +107,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top NavBarImage" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top" style="position: relative"> <!-- position: relative makes the image appear over the BG image -->
         <span class="d-block d-lg-none"><b>Ajith Kumar Natarajan</b></span>
-        <span class="d-none d-lg-block">
+        <span class="d-none d-lg-block img-container">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
       </a>
