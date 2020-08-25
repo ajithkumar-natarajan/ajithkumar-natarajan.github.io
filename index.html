@@ -64,21 +64,42 @@
     height: 10px;
     overflow-y: scroll;
   }
+
+  .NavBarImage
+  {
+    position: relative; 
+    /* height: 100vh; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .NavBarImage::before {    
+        content: "";
+        background-image: url(img/nodes_bg.png);
+        /* background-size: cover; */
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.3;
+  }
   </style>  
 
   <body id="page-top">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" style="background-image: url(img/nodes_bg.png);">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top NavBarImage" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="position: relative"> <!-- position: relative makes the image appear over the BG image -->
         <span class="d-block d-lg-none"><b>Ajith Kumar Natarajan</b></span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="position: relative">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -135,12 +156,12 @@
           <p class="lead mb-2"> You can find my resume 
             <!-- <a href = "https://drive.google.com/open?id=16Dyf9z0aqypSyTLa_E6Ms9opqrz_rEQ9">here</a> and  -->
             <a href="https://drive.google.com/open?id=1jpd-CEI1Rx6VrSsoiKGAFxGChRYj1kcS">here</a>.</p>
-          <div class="social-icons">
+          <div class="social-icons" style="margin-left: 40%;">
             <a href="https://www.linkedin.com/in/ajithkumar-natarajan/">
-              <i class="fab fa-linkedin-in"></i>
+              <span tooltip="Where I share my professional journey" flow="down"><i class="fab fa-linkedin-in"></i></span>
             </a>
             <a href="https://github.com/ajithkumar-natarajan/">
-              <i class="fab fa-github"></i>
+              <span tooltip="Where I build cool stuff" flow="down"><i class="fab fa-github"></i></span>
             </a>
             <!-- <a href="#">
               <i class="fab fa-twitter"></i>
