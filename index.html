@@ -126,10 +126,10 @@
             <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#technical_skills">Technical Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#academic_projects">Academic Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#technical_skills">Technical Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#certifications">Certifications & Training</a>
@@ -473,6 +473,150 @@
 
       <hr class="m-0">
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Replication of Dynamo DB (Using Java, SQL, XML)
+            </li>
+            <ul>
+              <li>Replicated the functionality of Amazon Dynamo DB by designing a persistent key-value storage.</li>
+              <li>Any key-value data inserted will be replicated across the database.</li>
+              <li>Supported edge cases such as random querying, insertion and failure of an instance all at once.</li>
+              <li>Once the failed node comes up alive it interacts with other nodes and replicated all the key-value pairs.</li>
+            </ul>
+            <br>
+            <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Group Messenger with Ordering Guarantees (Using Java, SQL, XML)
+            </li>
+            <ul>
+              <li>Implemented a multicast mechanism to build a group messenger that can send messages to multiple AVDs (Used fixed set of ports & socket).</li>
+              <li>A DB based content provider was used to store the messages.</li>
+              <li>Engineered FIFO and total order guarantees. ISIS based algorithm was used for guaranteeing total order.</li>
+              <li>Handled failure of an app instance in the middle of execution.</li>
+            </ul>
+            <br>
+            <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Chord based Distributed Hash Table (Using Java, SQL, XML)
+            </li>
+            <ul>
+              <li>Designed a Distributed Hash Table (DHT) that supported ID space partitioning/re-partitioning.</li>
+              <li>When a data was to be written or fetched a ring-based routing mechanism was followed.</li>
+              <li>The DHT was designed to handle node joins and disjoins in the middle of execution.</li>
+            </ul>
+            <br>
+          	<li>
+	    	      <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Complete Information Retrieval system (Using Python, JavaScript, HTML)
+            </li>
+            <ul>
+              <li>Built a complete information retrieval system from scratch and hosted (in AWS).</li>
+              <li>Tweets of several celebraties were scrapped and was used as the input text corpus.</li>
+              <li>LDA model was built to evaluate relevance of search query and return the results.</li>
+              <li>Sentiment analysis of tweets was done using NLP techniques.</li>
+              <li>HTML and JavaScript were used to implement the UI.</li>
+              <li>The UI consisted of various filtering & sorting options. Data clouds were also built to visualize the dataset and search results.</li>
+            </ul>
+            <br>
+                <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Panoramic Image builder (Using Python and OpenCV)
+            </li>
+            <ul>
+              <li>Detected the corners of structures in input image using Harris detector.</li>
+              <li>Used SIFT descriptor to extract features of the detected keypoints.</li>
+              <li>Wrote RANSAC algorithm to compute the homographic matrix and stitch the images.</li>
+            </ul>
+      	    <br>
+          	<li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Classification system using Neural Networks for <i>Fashion-MNIST dataset</i> (Using Python, Keras and TensorFlow)
+            </li>
+            <ul>
+              <li>Built a neural network without using any high-level machine learning libraries.</li>
+              <li>Implemented batch normalization on the network; Studied the effect of hyperparameteres such as learning rate, number of epochs, number of hidden layers, number of nodes in the hidden layers etc; The network produced an accuracy of 85%.</li>
+              <li>Modeled a CNN using Keras on top of TensorFlow; Implemeted mini-batch gradient descent optimization and dropout regularization; This network gave an accuracy of 92%.</li>
+              <li>Built an Auto-Encoder based K-Means clustering model & Gaussian Mixture Model to cluster the condensed representation of the dataset.</li>
+            </ul>
+	          <br>
+	          <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Image Segmentation using K-Means Clustering (Using Python and OpenCV)
+            </li>
+            <ul>
+              <li>Designed a program that outputs the best clustering result for a given 'K' value.</li>
+              <li>Clustering was done only based on Euclidean distance of pixel values.</li>
+            </ul>
+	          <br>
+	      	  <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Grid Navigation using Reinforcement Learning (Using Pythonand OpenAI Gym)
+            </li>
+            <ul>
+              <li>Built a reinforcement learning agent that navigates a 4x4 grid-world environment.</li>
+              <li>Q-Learning was implemented for the agent to learn the optimal policy.</li>
+            </ul>
+      	    <br>
+	      	  <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Tuning of Information Retrieval model (Using Python)
+            </li>
+            <ul>
+              <li>Implemented probabilistic models of IR (BM25, Divergence from Randomness and Language model) in Solr.</li>
+              <li>Tuned the model performance by using techniques such as query boosting and tweaking model parameters.</li>
+              <li>Evaluated the performance of the models using trec_eval software.</li>
+            </ul>
+	          <br>
+            <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Simple Boolean model Information Retrieval system (Using Python)
+            </li>
+            <ul>
+              <li>Built a command-line based information retrieval system that supports Boolean queries.</li>
+              <li>Designed the system to build an inverted index by doing basic preprocessing on the input text corpus.</li>
+              <li>Implemented Document-at-a-time retrieval method to generate the output to input queries.</li>
+              <li>TF-IDF statistic was used to rank the resulting documents.</li>
+            </ul>
+	          <br>
+            <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Road Safety Enhancement System for Automobiles by studying EEG waves (<i>Funded by the Centre For Technology Development and Transfer, Anna University</i>) (Using Python, Java, Android Studio and Raspberry Pi)
+            </li>
+            <ul>
+              <li>Constructed a neural network with an accuracy of 76% that inputs Electroencephalography (EEG) waves of the driver from NeuroSky mindwave headset to regress the sleepiness of the driver.</li>
+              <li>Fused the output from the neural network with the percentage of closure (PERCLOS) of eyes measured through a camera mounted on the dashboard to determine the state of the driver.</li>
+              <li>If the driver is found to be sleepy he/she would be alerted and guided to the nearest restaurant.</li>
+            </ul>
+            <br>
+            <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Prognosis of Breast Cancer and Diagnosis of Tumour Malignancy through Multiple Machine Learning Data Mining (MLDM) Techniques (<i>Practicum requirement</i>) (Using MATLAB)
+            </li>
+            <ul>
+              <li>Implemented Naïve Bayes (91% accuracy) and Decision tree (89% accuracy) classifiers to segregate the breast cancer dataset collected from Hindu mission hospital, Chennai, India into malignant and benign.</li>
+            </ul>
+	          <br>
+            <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Design and development of hardware and software (PC and Android application) of a Modern Smart Vehicle (Human-Machine interface) (Using NI LabVIEW, Android Studio, Python, Java and Raspberry Pi)
+            </li>
+            <ul>
+              <li>Developed a PC & mobile application and interfaced it with a prototype of an electronic car to control the vehicle remotely and also to monitor certain real-time information from sensors such as speed and battery power remaining.</li>
+            </ul>
+            <br>
+            <li>
+              <i class="fa-li fa fa-project-diagram text-warning"></i>
+              Mini-projects like pre-skid alerter (Using 3-axis accelerometer module & ATmega2560); Heart Rate Computation from ECG signal analysis (Using MATLAB); Autonomous Trolley Billing system (Using ATmega328P) <i>and multiple other minor projects.</i></li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="technical_skills">
         <div class="my-auto">
           <h2 class="mb-5">Technical skills</h2>
@@ -627,149 +771,6 @@
 
           <br>
 
-        </div>
-      </section>
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="academic_projects">
-        <div class="my-auto">
-          <h2 class="mb-5">Academic Projects</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Replication of Dynamo DB (Using Java, SQL, XML)
-            </li>
-            <ul>
-              <li>Replicated the functionality of Amazon Dynamo DB by designing a persistent key-value storage.</li>
-              <li>Any key-value data inserted will be replicated across the database.</li>
-              <li>Supported edge cases such as random querying, insertion and failure of an instance all at once.</li>
-              <li>Once the failed node comes up alive it interacts with other nodes and replicated all the key-value pairs.</li>
-            </ul>
-            <br>
-            <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Group Messenger with Ordering Guarantees (Using Java, SQL, XML)
-            </li>
-            <ul>
-              <li>Implemented a multicast mechanism to build a group messenger that can send messages to multiple AVDs (Used fixed set of ports & socket).</li>
-              <li>A DB based content provider was used to store the messages.</li>
-              <li>Engineered FIFO and total order guarantees. ISIS based algorithm was used for guaranteeing total order.</li>
-              <li>Handled failure of an app instance in the middle of execution.</li>
-            </ul>
-            <br>
-            <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Chord based Distributed Hash Table (Using Java, SQL, XML)
-            </li>
-            <ul>
-              <li>Designed a Distributed Hash Table (DHT) that supported ID space partitioning/re-partitioning.</li>
-              <li>When a data was to be written or fetched a ring-based routing mechanism was followed.</li>
-              <li>The DHT was designed to handle node joins and disjoins in the middle of execution.</li>
-            </ul>
-            <br>
-          	<li>
-	    	      <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Complete Information Retrieval system (Using Python, JavaScript, HTML)
-            </li>
-            <ul>
-              <li>Built a complete information retrieval system from scratch and hosted (in AWS).</li>
-              <li>Tweets of several celebraties were scrapped and was used as the input text corpus.</li>
-              <li>LDA model was built to evaluate relevance of search query and return the results.</li>
-              <li>Sentiment analysis of tweets was done using NLP techniques.</li>
-              <li>HTML and JavaScript were used to implement the UI.</li>
-              <li>The UI consisted of various filtering & sorting options. Data clouds were also built to visualize the dataset and search results.</li>
-            </ul>
-            <br>
-                <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Panoramic Image builder (Using Python and OpenCV)
-            </li>
-            <ul>
-              <li>Detected the corners of structures in input image using Harris detector.</li>
-              <li>Used SIFT descriptor to extract features of the detected keypoints.</li>
-              <li>Wrote RANSAC algorithm to compute the homographic matrix and stitch the images.</li>
-            </ul>
-      	    <br>
-          	<li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Classification system using Neural Networks for <i>Fashion-MNIST dataset</i> (Using Python, Keras and TensorFlow)
-            </li>
-            <ul>
-              <li>Built a neural network without using any high-level machine learning libraries.</li>
-              <li>Implemented batch normalization on the network; Studied the effect of hyperparameteres such as learning rate, number of epochs, number of hidden layers, number of nodes in the hidden layers etc; The network produced an accuracy of 85%.</li>
-              <li>Modeled a CNN using Keras on top of TensorFlow; Implemeted mini-batch gradient descent optimization and dropout regularization; This network gave an accuracy of 92%.</li>
-              <li>Built an Auto-Encoder based K-Means clustering model & Gaussian Mixture Model to cluster the condensed representation of the dataset.</li>
-            </ul>
-	          <br>
-	          <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Image Segmentation using K-Means Clustering (Using Python and OpenCV)
-            </li>
-            <ul>
-              <li>Designed a program that outputs the best clustering result for a given 'K' value.</li>
-              <li>Clustering was done only based on Euclidean distance of pixel values.</li>
-            </ul>
-	          <br>
-	      	  <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Grid Navigation using Reinforcement Learning (Using Pythonand OpenAI Gym)
-            </li>
-            <ul>
-              <li>Built a reinforcement learning agent that navigates a 4x4 grid-world environment.</li>
-              <li>Q-Learning was implemented for the agent to learn the optimal policy.</li>
-            </ul>
-      	    <br>
-	      	  <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Tuning of Information Retrieval model (Using Python)
-            </li>
-            <ul>
-              <li>Implemented probabilistic models of IR (BM25, Divergence from Randomness and Language model) in Solr.</li>
-              <li>Tuned the model performance by using techniques such as query boosting and tweaking model parameters.</li>
-              <li>Evaluated the performance of the models using trec_eval software.</li>
-            </ul>
-	          <br>
-            <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Simple Boolean model Information Retrieval system (Using Python)
-            </li>
-            <ul>
-              <li>Built a command-line based information retrieval system that supports Boolean queries.</li>
-              <li>Designed the system to build an inverted index by doing basic preprocessing on the input text corpus.</li>
-              <li>Implemented Document-at-a-time retrieval method to generate the output to input queries.</li>
-              <li>TF-IDF statistic was used to rank the resulting documents.</li>
-            </ul>
-	          <br>
-            <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Road Safety Enhancement System for Automobiles by studying EEG waves (<i>Funded by the Centre For Technology Development and Transfer, Anna University</i>) (Using Python, Java, Android Studio and Raspberry Pi)
-            </li>
-            <ul>
-              <li>Constructed a neural network with an accuracy of 76% that inputs Electroencephalography (EEG) waves of the driver from NeuroSky mindwave headset to regress the sleepiness of the driver.</li>
-              <li>Fused the output from the neural network with the percentage of closure (PERCLOS) of eyes measured through a camera mounted on the dashboard to determine the state of the driver.</li>
-              <li>If the driver is found to be sleepy he/she would be alerted and guided to the nearest restaurant.</li>
-            </ul>
-            <br>
-            <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Prognosis of Breast Cancer and Diagnosis of Tumour Malignancy through Multiple Machine Learning Data Mining (MLDM) Techniques (<i>Practicum requirement</i>) (Using MATLAB)
-            </li>
-            <ul>
-              <li>Implemented Naïve Bayes (91% accuracy) and Decision tree (89% accuracy) classifiers to segregate the breast cancer dataset collected from Hindu mission hospital, Chennai, India into malignant and benign.</li>
-            </ul>
-	          <br>
-            <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Design and development of hardware and software (PC and Android application) of a Modern Smart Vehicle (Human-Machine interface) (Using NI LabVIEW, Android Studio, Python, Java and Raspberry Pi)
-            </li>
-            <ul>
-              <li>Developed a PC & mobile application and interfaced it with a prototype of an electronic car to control the vehicle remotely and also to monitor certain real-time information from sensors such as speed and battery power remaining.</li>
-            </ul>
-            <br>
-            <li>
-              <i class="fa-li fa fa-project-diagram text-warning"></i>
-              Mini-projects like pre-skid alerter (Using 3-axis accelerometer module & ATmega2560); Heart Rate Computation from ECG signal analysis (Using MATLAB); Autonomous Trolley Billing system (Using ATmega328P) <i>and multiple other minor projects.</i></li>
-          </ul>
         </div>
       </section>
 
