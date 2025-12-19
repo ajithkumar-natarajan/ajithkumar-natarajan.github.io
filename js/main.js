@@ -59,6 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
         dateElement.textContent = `Last active: ${lastModDate.toLocaleDateString()}`; // "Last active" sounds better for a dev portfolio
     }
 
+    // Dynamic Copyright Year
+    const yearSpan = document.getElementById('copyright-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
     /* Contact Widget Logic */
     const contactToggle = document.getElementById('contact-toggle');
     const contactClose = document.getElementById('contact-close');
