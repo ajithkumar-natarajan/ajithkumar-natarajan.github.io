@@ -253,3 +253,27 @@ function startAboutCarousel() {
 
 // Start when loaded
 startAboutCarousel();
+
+/* Scroll to Top Logic */
+const scrollTopBtn = document.getElementById("scroll-to-top");
+
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (scrollTopBtn) {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.classList.add("visible");
+        } else {
+            scrollTopBtn.classList.remove("visible");
+        }
+    }
+}
+
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
