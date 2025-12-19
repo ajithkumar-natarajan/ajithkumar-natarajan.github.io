@@ -2,957 +2,847 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Ajith Nat - Staff Software Engineer specializing in Cloud Computing, Distributed Systems, and AI/ML.">
+  <meta name="author" content="Ajith Nat">
+  <title>Ajith Nat | Staff Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+  </script>
+
+  <!-- Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1RTNRSXC2J"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1RTNRSXC2J');
-</script>
-
-
-  <!-- Script for LinkedIn profile integration -->
-  <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
-
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Portfolio - Ajith Kumar Natarajan</title>
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/timeline_style.css">
-
-  <base target="_blank">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1RTNRSXC2J');
+  </script>
 </head>
 
-<style>
-  .ScrollStyle
-  {
-    height: 10px;
-    overflow-y: scroll;
-  }
+<body>
 
-  .NavBarImage
-  {
-    position: relative; 
-    /* height: 100vh; */
-    /* width: 100%; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .NavBarImage::before {    
-    content: "";
-    background-image: url(img/nodes_bg.png);
-    /* background-size: cover; */
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.3;
-  }
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Ajith<span class="text-accent">Nat</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#recommendations" class="nav-link">Recommendations</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  /* To disable opening image in new tab on right click */
-  .img-container {
-  position: relative;
-  }
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container hero-content fade-in">
+      <span class="hero-subtitle">Hello, I'm</span>
+      <h1 class="hero-title">Ajith <span class="text-accent">Nat</span>.</h1>
+      <h2 class="hero-title" style="font-size: 3rem; opacity: 0.8;">I build and run systems that don’t break.</h2>
+      <p class="hero-description">
+        I enjoy solving hard systems problems and building software that works in the real world. I’m particularly
+        interested in reliability, observability, and designing systems that scale beyond the happy path.
+      </p>
+      <a href="#experience" class="btn">View My Experience</a>
+    </div>
+  </section>
 
-  .img-container:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-  }
-</style>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>
+            I’m a Backend / Systems Engineer with 5+ years of experience building and operating reliable distributed
+            systems in fast-paced startup environments. I’ve grown rapidly from an individual contributor into a Staff
+            Software Engineer, with experience mentoring engineers and leading teams through critical technical
+            decisions.
+          </p>
+          <p>
+            I’ve owned backend services, infrastructure, and Linux-based edge AI systems end-to-end—spanning deployment
+            orchestration, backend APIs, and system observability across edge devices, on-prem data centers, and cloud
+            environments. My work sits at the intersection of distributed systems, backend application development, and
+            infrastructure, with a strong focus on operating software in production.
+          </p>
+          <p>
+            I don’t just write code — I think deeply about system design, failure modes, and long-term operability. With
+            a strong foundation in computer science and systems engineering, I enjoy building scalable systems from the
+            ground up and helping teams develop sound engineering practices.
+          </p>
+          <p>
+            When I’m not working, you’ll usually find me playing or watching soccer, hiking, skiing, traveling, working
+            on a hobby project, or keeping up with the news — technology, politics, economics, and current affairs.
+          </p>
+          <p class="status-highlight">
+            <i class="fas fa-map-marker-alt"></i> Based in Seattle, WA.
+            <span class="opentowork-text">Open to new opportunities!</span>
+          </p>
+          <div style="margin-top: 2rem;">
+            <a href="https://drive.google.com/file/d/1uCUMF-IqmLDJKMASj1IUAVaRZx-8pTfP/view" class="btn"
+              target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="#contact" class="btn btn-outline" style="margin-left: 1rem;"><i class="fas fa-envelope"></i> Get in
+              Touch</a>
+          </div>
+        </div>
 
-<body id="page-top">
+        <div class="profile-img-container" id="about-carousel" oncontextmenu="return false;">
+          <img src="img/profile.jpeg" alt="Ajith Nat" class="carousel-slide active">
+          <img src="img/hike.jpg" alt="Hiking" class="carousel-slide">
+          <img src="img/ski.jpg" alt="Skiing" class="carousel-slide">
+          <img src="img/vacation.jpeg" alt="Vacation" class="carousel-slide">
+          <img src="img/soccer.jpg" alt="Soccer" class="carousel-slide">
+          <img src="img/travel.jpg" alt="Traveling" class="carousel-slide">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top NavBarImage" id="sideNav">
-  <a class="navbar-brand js-scroll-trigger" href="#page-top" style="position: relative">
-    <!-- position: relative makes the image appear over the BG image -->
-    <span class="d-block d-lg-none"><b>Ajith Kumar Natarajan</b></span>
-    <span class="d-none d-lg-block img-container">
-      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-    </span>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-          style="position: relative">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative; text-align: center">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#technical_skills">Technical Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#academic_projects">Academic Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#certifications">Certifications & Training</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#activities">Activities and Societies</a>
-      </li>
-      <br>
-      <br>
-      <script language="Javascript">
-        document.write('<font color="white"> <b>'+"This page was last modified on: " + document.lastModified +"</font></b>");
-      </script>
-    </ul>
-  </div>
-</nav>
+          <div class="carousel-caption">
+            <span class="caption-text">About Me</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="container-fluid p-0">
-  <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-    <div class="my-auto">
-      <h1 class="mb-0">Ajith Kumar
-        <span class="text-primary">Natarajan</span>
-      </h1>
-<!--      <div class="subheading mb-5">
-        <a href="mailto:natarajan.ajithkumar@gmail.com">natarajan.ajithkumar@gmail.com</a>
-      </div>-->
-      <br>
-      <p class="lead mb-2">I am a young professional with about 4 years of industrial experience. The majority of my
-        work has been in the fields of cloud software engineering, distributed systems, software development and
-        computer vision. I have the experience of working in both medium and small-sized
-        environments.</p>
-      <p class="lead mb-2">As a self-motivated and team player, I love to engineer innovative products that
-        can improve our day-to-day lives. Being a computer scientist as well as an engineer, I have a good
-        understanding of the fundamentals behind the working of software.</p>
-      <p class="lead mb-2"> You can find my resume <a href="https://drive.google.com/open?id=1jpd-CEI1Rx6VrSsoiKGAFxGChRYj1kcS">here</a>.</p>
-      <div class="social-icons" style="margin-left: 40%;">
-        <p>
-          <span tooltip="Where I share my professional journey" flow="down">
-            <a href="https://www.linkedin.com/in/ajithkumar-natarajan/">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </span>
-          <span tooltip="Where I share my personal work" flow="down">
-                <a href="https://github.com/ajithkumar-natarajan/">
-                  <i class="fab fa-github"></i>
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title fade-in">Experience</h2>
+      <div class="timeline">
+
+        <!-- RadiusAI -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Staff Software Engineer – Infrastructure & Backend</h3>
+              <span class="exp-date">Jan 2023 - Present</span>
+            </div>
+            <div class="exp-company">RadiusAI <i>(Previously Senior Software Engineer, Software Engineer)</i></div>
+            <ul class="exp-list">
+              <li><b>Growth & Leadership:</b> Recognized for ownership and execution; promoted twice within 2.5 years.
+                Assumed team lead responsibilities, mentoring engineers and leading hiring decisions.</li>
+              <li><b>Backend & Edge Systems:</b> Built and owned backend services and REST APIs for deployment
+                orchestration and telemetry collection on Linux-based edge devices.</li>
+              <li><b>Infrastructure & Hardware:</b> Owned and operated a hybrid stack spanning low-level Linux systems
+                (Ubuntu, openSUSE), on-prem production servers, and Azure cloud infrastructure.</li>
+              <li><b>Observability:</b> Implemented company-wide observability using OpenObserve and Vector across edge
+                hardware and backend services.</li>
+              <li><b>Networking & Systems:</b> Designed and implemented network infrastructure from scratch, including
+                VPNs and site-to-site connectivity; worked extensively on low-level Linux debugging and system tuning.
+              </li>
+            </ul>
+
+            <!-- GitHub Activity Widget -->
+            <div class="github-widget mt-4 fade-in">
+              <div class="gh-header">
+                <i class="fab fa-github"></i>
+                <span class="gh-title">GitHub Activity</span>
+              </div>
+
+              <div class="gh-tabs">
+                <button class="gh-tab active" data-year="2025" onclick="switchGhYear('2025')">2025</button>
+                <button class="gh-tab" data-year="2024" onclick="switchGhYear('2024')">2024</button>
+                <button class="gh-tab" data-year="2023" onclick="switchGhYear('2023')">2023</button>
+              </div>
+
+              <div class="gh-content">
+                <a id="gh-link" href="https://github.com/ajith-natarajan-rai?tab=overview&from=2025-01-01&to=2025-12-31"
+                  target="_blank">
+                  <img id="gh-img" src="img/gh-rai-2025.png" alt="GitHub Activity 2025" class="gh-graph">
+                  <div class="gh-overlay">
+                    <span>View on GitHub <i class="fas fa-external-link-alt"></i></span>
+                  </div>
                 </a>
-              </span>
-        </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pegasystems (Full Time) -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Cloud Development Engineer</h3>
+              <span class="exp-date">Apr 2021 - Nov 2022</span>
+            </div>
+            <div class="exp-company">Pegasystems</div>
+            <ul class="exp-list">
+              <li>Contributed to the design and release process of Pega Cloud 3.x.</li>
+              <li>Implemented end-to-end automation for complex build and release workflows.</li>
+              <li>Led an initiative to shut down stale cloud accounts, resulting in over $1M/year in cost savings.</li>
+              <li>Automated cleanup of development artifacts, reclaiming 75TB+ of storage.</li>
+              <li>Resolved approximately 80% of SEV1 production incidents owned by the team.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pegasystems (Intern) -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Cloud Development Engineer Intern</h3>
+              <span class="exp-date">May 2020 - Dec 2020</span>
+            </div>
+            <div class="exp-company">Pegasystems</div>
+            <ul class="exp-list">
+              <li>Developed Terraform-based automation for Kubernetes cluster provisioning and Jenkins deployment.</li>
+              <li>Built proof-of-concepts for continuous deployment tools, reducing manual effort by 12% and lowering
+                operational costs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Research Assistant
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Research Assistant</h3>
+              <span class="exp-date">Aug 2019 - Dec 2020</span>
+            </div>
+            <div class="exp-company">University at Buffalo (Automatic Data Extraction)</div>
+            <ul class="exp-list">
+              <li>Built AI model to reverse engineer data from scientific plots.</li>
+              <li>Implement end-to-end pipeline: text detection, role classification, and CSV generation.</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- Bharati Script -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Software Engineer - <a href="https://bharatiscript.com/">Bharati Script</a></h3>
+              <span class="exp-date">Aug 2018 - Jul 2019</span>
+            </div>
+            <div class="exp-company">Indian Institute of Technology, Madras</div>
+            Designed and built AI-powered systems to support Bharati, a unified script for major Indian languages,
+            spanning computer vision, OCR, mobile applications, and applied machine learning.
+            <ul class="exp-list">
+              <li>Led a team of three engineers to develop a CNN-based finger-spelling recognition system, achieving 93%
+                accuracy on a novel Bharati dataset.</li>
+              <li>Designed and implemented an OCR engine for a new Bharati font with 97.5% character-level accuracy.
+              </li>
+              <li>Built a Bharati Handwriting Keyboard <a
+                  href="https://play.google.com/store/apps/details?id=com.iitm.bharatikeyboard&hl=en_US">Android
+                  application</a> using an SVM-based classifier to convert
+                Bharati keystrokes into target language characters.</li>
+              <li>Developed a Bharati transliteration <a
+                  href="https://play.google.com/store/apps/details?id=com.bharatiscript.bharatitransliterator&hl=en_US">Android
+                  application</a> to transliterate Indian scripts into Bharati,
+                enabling tourists to read signboards and public text across languages.</li>
+              <li>Co-developed <a
+                  href="https://play.google.com/store/apps/details?id=com.bharatiscript.jumbletumble&hl=en_US">Bharati
+                  JumbleTumble</a>, a mobile board game to promote learning and adoption of the Bharati
+                script.</li>
+              <li>Rebuilt <a href="https://bharatiscript.com/">bharatiscript.com</a> from scratch to support outreach
+                and documentation efforts.</li>
+              <li>Played a key role in securing a $44,400 MoU with Tata Consultancy Services (TCS) to support further
+                development and research.</li>
+              <li>Some magazines where my work has been covered: <a
+                  href="https://timesofindia.indiatimes.com/city/chennai/why-it-is-important-for-people-to-sign-up-for-this/articleshow/71258999.cms">
+                  Times of India (English)</a>, <a
+                  href="https://www.thehindu.com/sci-tech/science/iit-madras-easy-ocr-system-for-nine-indian-languages/article26966671.ece">
+                  The Hindu (English)</a>, <a href="https://epaper.sakshi.com/1965195/Chennai-City/04-01-2019#page/8/1">
+                  Sakshi
+                  (Telugu)</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Zoho -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Software Engineer Intern</h3>
+              <span class="exp-date">Dec 2017 - Jul 2018</span>
+            </div>
+            <div class="exp-company">Zoho Corporation</div>
+            <ul class="exp-list">
+              <li>Worked on backend system integration for file format conversion (CSV, XLS to Java objects).</li>
+              <li>Awarded <b>Best Intern (2017–2018)</b> for performance and impact.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <hr class="m-0">
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title fade-in">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Master of Science - Computer Science</h3>
+              <span class="exp-date">2019 - 2021</span>
+            </div>
+            <div class="exp-company">University at Buffalo, SUNY</div>
+            <p style="color: var(--text-secondary);">Relevant coursework include
+              Distributed Systems, Computational Science, Algorithms, Linear Algebra, Computer Vision and Image
+              Processing, Machine Learning, Information Retrieval, Pattern Recognition, Decision Analysis
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="exp-header">
+              <h3 class="exp-role">Bachelor of Science - Electrical Engineering</h3>
+              <span class="exp-date">2014 - 2018</span>
+            </div>
+            <div class="exp-company">Madras Institute of Technology, Anna University <i>(Thesis completed at Indian
+                Institute of Technology, Madras)</i></div>
+            <p style="color: var(--text-secondary);">Relevant coursework include Data Structures and Algorithms,
+              Object-Oriented Programming, Computing Techniques, Digital Image Processing, Embedded Systems,
+              Microprocessors, Microcontrollers, Integrated Circuits, Digital Logic Theory, Digital Signal Processing,
+              Control Engineering, Process Control, Thermodynamics and Fluid Theory
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-    <div id="content">
-      <h2 class="mb-5">Education</h2>
-      <ul class="timeline">
-        <li>
-          <div class="timeline-badge">
-            <a><i class="fa fa-circle"></i></a>
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>University at Buffalo - State University of New York, USA</h4>
-            </div>
-            <div class="timeline-body">
-              <p><b>Master of Science - Computer Science</b></p>
-              <p><u>Coursework:</u><br>
-                Distributed Systems, Computational Science, Algorithms, Linear Algebra, Computer Vision
-                and Image Processing, Machine Learning, Information Retrieval, Pattern Recognition,
-                Decision Analysis</p>
-            </div>
-            <div class="timeline-footer">
-              <p class="text-right">August 2019 - February 2021</p>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title fade-in">Featured Projects</h2>
+      <p class="fade-in"
+        style="color: var(--text-secondary); margin-top: -2.5rem; margin-bottom: 3rem; font-size: 1rem;">(Selected
+        academic and personal projects)</p>
+      <div class="projects-grid">
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-database folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/ajithkumar-natarajan/CSE586-DS/tree/master/PA4" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://drive.google.com/file/d/1lZJIqJberTkqgTKinpK4H6n44lunlNAR/view?usp=sharing"
+                target="_blank"><i class="fas fa-video"></i></a>
             </div>
           </div>
+          <div class="project-title">DynamoDB-Style Replicated Key-Value Store</div>
+          <div class="project-desc">
+            Designed and implemented a persistent key–value storage system inspired by Amazon DynamoDB, supporting
+            replication across multiple nodes with failure detection and recovery.
+          </div>
+          <div class="project-tech-list">
+            <span>Java</span> <span>Distributed Systems</span> <span>Replication</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-comments folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/ajithkumar-natarajan/CSE586-DS/tree/master/PA2B" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-title">Group Messenger with Total Order Guarantees</div>
+          <div class="project-desc">
+            Built a fault-tolerant multicast messaging system providing FIFO and total order delivery using the ISIS
+            algorithm, resilient to application failures.
+          </div>
+          <div class="project-tech-list">
+            <span>Java</span> <span>Distributed Systems</span> <span>Multicast</span> <span>ISIS Algorithm</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-project-diagram folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/ajithkumar-natarajan/CSE586-DS/tree/master/PA3" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-title">Chord Distributed Hash Table</div>
+          <div class="project-desc">
+            Implemented a Chord-based distributed hash table supporting ID space partitioning, ring-based routing, and
+            dynamic node joins and departures.
+          </div>
+          <div class="project-tech-list">
+            <span>Java</span> <span>Distributed Systems</span> <span>DHT</span> <span>Chord</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-search folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/ajithkumar-natarajan/CSE535-IR-Project4" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-title">Information Retrieval System</div>
+          <div class="project-desc">
+            Developed a full-stack information retrieval system deployed on AWS, using LDA for topic modeling and
+            NLP-based sentiment analysis on a large Twitter corpus.
+          </div>
+          <div class="project-tech-list">
+            <span>Python</span> <span>AWS</span> <span>NLP</span> <span>Solr</span>
+          </div>
+        </div>
+
+        <!-- Hackathons -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-shield-virus folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/ajithkumar-natarajan/SFHacks_2021" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://devpost.com/software/kinshield" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+          <div class="project-title">KinShield (Hackathon)</div>
+          <div class="project-desc">
+            Built a COVID recovery and hygiene tracking portal for children, with automated vaccine reminders and
+            notifications for adults.
+          </div>
+          <div class="project-tech-list">
+            <span>Python</span> <span>GCP</span> <span>Firebase</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-home folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/ajithkumar-natarajan/BrickHack-Hackathon" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-title">Home Management IoT System</div>
+          <div class="project-desc">
+            Designed an IoT system to monitor household products and automatically add items to a shopping cart using
+            the Wegmans API.
+          </div>
+          <div class="project-tech-list">
+            <span>Python</span> <span>IoT</span> <span>API</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-cloud folder-icon"></i>
+          </div>
+          <div class="project-title">Pega Hackathon – Cloud Quota Monitoring Bot</div>
+          <div class="project-desc">
+            Created a cloud quota monitoring bot that alerted teams to usage limits and enabled one-click quota increase
+            requests.
+          </div>
+          <div class="project-tech-list">
+            <span>Cloud</span> <span>Automation</span> <span>Bot</span>
+          </div>
+        </div>
+
+        <!-- CV Projects -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-image folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/ajithkumar-natarajan/CSE573-CVIP/tree/master/Project-2" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-title">Panoramic Image Builder</div>
+          <div class="project-desc">
+            Implemented an image stitching pipeline using Harris corner detection, SIFT feature matching, and
+            RANSAC-based homography estimation.
+          </div>
+          <div class="project-tech-list">
+            <span>Python</span> <span>OpenCV</span> <span>Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fas fa-tshirt folder-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/ajithkumar-natarajan/CSE574-IML/tree/master/Project-3" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-title">Fashion-MNIST CNN</div>
+          <div class="project-desc">
+            Built custom neural networks (85% accuracy) and CNN models using Keras (92% accuracy), incorporating batch
+            normalization and dropout for improved performance.
+          </div>
+          <div class="project-tech-list">
+            <span>Python</span> <span>TensorFlow</span> <span>Keras</span> <span>Deep Learning</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title fade-in">Technical Skills</h2>
+      <div class="skills-wrapper fade-in">
+
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>Shell Scripting</li>
+            <li>Java</li>
+            <li>Rust</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend & Systems</h3>
+          <ul class="skill-list">
+            <li>Distributed Systems</li>
+            <li>Backend Services & REST APIs</li>
+            <li>Linux (Ubuntu, openSUSE)</li>
+            <li>Networking</li>
+            <li>Observability & Monitoring</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Cloud & DevOps</h3>
+          <ul class="skill-list">
+            <li>AWS · Azure · GCP</li>
+            <li>Kubernetes (k8s, k3s) · Docker · Helm</li>
+            <li>CI/CD (GitHub Actions, Jenkins)</li>
+            <li>Infrastructure as Code (Terraform)</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>AI / ML & Observability</h3>
+          <ul class="skill-list">
+            <li>OpenObserve · Vector</li>
+            <li>PyTorch · TensorFlow · Keras</li>
+            <li>OpenCV</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Web & Developer Tools</h3>
+          <ul class="skill-list">
+            <li>HTML · CSS · JavaScript</li>
+            <li>Git · GitHub</li>
+            <li>Android Studio</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Microcontrollers</h3>
+          <ul class="skill-list">
+            <li>Raspberry Pi</li>
+            <li>Arduino Uno</li>
+            <li>Arduino Mega</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title fade-in">Certifications & Training</h2>
+      <ul class="cert-list">
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <a href="https://verify.skilljar.com/c/2bzvtq3fi6dn" target="_blank">Jenkins (CloudBees) (Jul 2020)</a>
         </li>
-
-        <li class="clearfix no-float"></li>
-
-        <li class="timeline-inverted">
-          <div class="timeline-badge">
-            <a><i class="fa fa-circle invert"></i></a>
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>Madras Institute of Technology (MIT), India & Indian Institute of Technology (IIT), Madras, India</h4>
-            </div>
-            <div class="timeline-body">
-              <p><b>Bachelor of Engineering - Electronics Engineering</b></p>
-              <p><u>Selected coursework:</u><br>
-                Data Structures and Algorithms, Object-Oriented Programming, Computing Techniques,
-                Digital Image Processing, Embedded Systems, Microprocessors, Microcontrollers,
-                Integrated Circuits, Digital Logic Theory, Digital Signal Processing, Control
-                Engineering, Process Control, Thermodynamics and Fluid Theory</p>
-            </div>
-            <div class="timeline-footer">
-              <p class="text-right">August 2014 - April 2018</p>
-            </div>
-          </div>
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <a href="https://linuxacademy.com/profile/u/cert/id/353496" target="_blank">Containers (Linux Academy) (Jul
+            2020)</a>
         </li>
-
-        <li class="clearfix no-float"></li>
-
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/4EBT86CTZW9G" target="_blank">Machine
+            Learning (Stanford University) (Jan 2020 - Apr 2020)</a>
+        </li>
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/KMS2BXE8FU5Z" target="_blank">Linear
+            Algebra (Imperial College of London) (Dec 2019 - Mar 2020)</a>
+        </li>
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <span>Analysis and Interpretation of Biological Data (IIT Madras) (Jan 2019 - May 2019)</span>
+        </li>
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <span>Winter course on Machine Intelligence and Brain Research (IIT Madras) (Jan 2019)</span>
+        </li>
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <span>Introduction to Statistical Hypothesis Testing (IIT Madras) (Jun 2017 - Jul 2017)</span>
+        </li>
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <span>Introduction to Algorithms & Data Structures (MIT) (Jan 2017 - May 2017)</span>
+        </li>
+        <li class="fade-in">
+          <i class="fas fa-award"></i>
+          <span>Scilab for Engineers (IIT Bombay) (Dec 2015 - Jan 2016) (Certified)</span>
+        </li>
       </ul>
     </div>
   </section>
 
-  <hr class="m-0">
+  <!-- Recommendations Section -->
+  <section id="recommendations" class="bg-dark">
+    <div class="container">
+      <h2 class="section-title fade-in" style="margin-bottom: 3rem;">Recommendations</h2>
 
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-    <div class="my-auto">
+      <div class="recommendations-scroll fade-in" id="rec-scroll-container">
 
-      <h2 class="mb-5">Work Experience</h2><!--Industry or Industrial CHECK-->
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Cloud Development Engineer</h3>
-          <div class="subheading">Pegasystems</div>
-          <ul>
-            <li> Conceptualized, designed, identified gaps and did key contributions in the release process of Pega Cloud 3.x.</li>
-            <li> Automated the triaging of bugs being created as part of nightly test builds.</li>
-            <li> Implemented end-to-end automation of a complicated build release process.</li>
-            <li> Single-handedly drove an initiative to shut down a mostly stale, yet major cloud account (>$1M/yr) used across org.</li>
-            <li> Automated the cleanup of development artifacts being generated. Saved more than 75 TB of data usage.</li>
-            <li> Resolved 80% of SEV1 incidents that my team was responsible for during 2021-22.</li>
-          </ul>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">April 2021 - November 2022</span><br>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Cloud Development Engineer Intern</h3>
-          <div class="subheading">Pegasystems</div>
-          <ul>
-            <li>Developed a Terraform script that provisions the necessary infrastructure to spin up a
-              Kubernetes cluster in the cloud; deploy applications such as Jenkins in the cluster; setup
-              some plugins with required configurations and finally run some proprietary jobs in it. This
-              was facilitated using the Infrastructure-as-Code methodology. (<a href="https://github.com/ajithkumar-natarajan/SFHacks_2021">Gitbook</a>)
-            </li>
-            <li>Worked on a POC of different continuous deployment tools for the team to reduce man-hours by
-              12% and cost by more than 200%.
-            </li>
-          </ul>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">May 2020 - December 2020</span><br>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Research Assistant</h3>
-          <div class="subheading"><a href="https://chartinfo.github.io/">Automatic Data Extraction from
-            Scientific Plots</a></div>
-          <div class=" mb-3"><h6>Supervisor: <a
-              href="https://www.buffalo.edu/cubs/members/venu-govindaraju.html">Prof. Venu Govindaraju</a>
-            (University at Buffalo - State University of New York)</h6></div>
-          <ul>
-            <li>Built an AI model to reverse engineer the data used to create scientific plots.</li>
-            <li>The end-to-end pipeline will consist of text detection & recognition; text role classification; plot element classification followed by CSV generation.
-            </li>
-          </ul>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">August 2019 - December 2020</span><br>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Software Engineer</h3>
-          <div class="subheading"><a href="http://bharatiscript.com">AI engines for Bharati script (A unified
-            script for all major languages in India)</a></div>
-          <div class=" mb-3"><h6>Supervisor: <a href="https://biotech.iitm.ac.in/Faculty/CNS_LAB/VSC.html">Prof.
-            Srinivasa Chakravarthy. V</a> (Indian Institute of Technology, Madras)</h6></div>
-          <ul>
-            <li>Led a team of 3 members to build a CNN model with 93% accuracy to recognize a novel
-              finger-spelling system based on Bharati.
-            </li>
-            <li>Developed an OCR engine (accuracy: 97.5%) for a new Bharati font.</li>
-            <li>Built Bharati Handwriting Keyboard, an Android application. This app takes in keystrokes in
-              Bharati script and converts to corresponding output
-              character using SVM classifier. The output is given in the language chosen in the
-              application settings. <a
-                  href="https://play.google.com/store/apps/details?id=com.iitm.bharatikeyboard&hl=en_US">Link
-                to the app</a>.
-            </li>
-            <li>Built Bharati transliterator Android application. This application transliterates text in
-              Indian scripts to Bharati, to facilitate tourists in India to read texts & signboards in
-              other Indian languages. <a
-                  href="https://play.google.com/store/apps/details?id=com.bharatiscript.bharatitransliterator&hl=en_US">Link
-                to the app</a>.
-            </li>
-            <li>Developed a mobile board game titled Bharati JumbleTumble along with two of my team members.
-              <a href="https://play.google.com/store/apps/details?id=com.bharatiscript.jumbletumble&hl=en_US">Link
-                to the app</a>.
-            </li>
-            <li>Was instrumental in signing a project MoU amounting to USD44400 between Bharati script team
-              and Tata Consultancy Services.
-            </li>
-            <li>Re-built <a href="http://bharatiscript.com">bharatiscript.com</a> website from scratch.</li>
-            <li>Some magazines where my work has been covered: <a
-                href="https://timesofindia.indiatimes.com/city/chennai/why-it-is-important-for-people-to-sign-up-for-this/articleshow/71258999.cms">
-              Times of India (English)</a>, <a
-                href="https://www.thehindu.com/sci-tech/science/iit-madras-easy-ocr-system-for-nine-indian-languages/article26966671.ece">
-              The Hindu (English)</a>, <a
-                href="https://epaper.sakshi.com/1965195/Chennai-City/04-01-2019#page/8/1"> Sakshi
-              (Telugu)</a>.
-            </li>
-          </ul>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">August 2018 - July 2019</span><br>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Software Engineer</h3>
-          <div class="subheading"><a href="https://zoho.com">Zoho Corporation Pvt Ltd</a></div>
-          <div class=" mb-3"><h6>Back-end Systems Integration - Conversion of various file formats to Java
-            objects</h6></div>
-          <ul>
-            <li>Devised the back-end technique to import files of different types (CSV, TSV, XLS, etc..) and
-              integrate into the current Zoho
-              Tables (product yet-to-be-launched) project using JSON with Java.
-            </li>
-            <li>Received the "Best Intern" award for the year 2017-2018.</li>
-          </ul>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">December 2017 - July 2018</span><br>
-        </div>
-      </div>
-
-
-      <!-- <h2 class="mb-5">Research Experience</h2> -->
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Research Associate</h3>
-          <div class="subheading"><a href="https://goo.gl/sCswJ9">Identification via Sparse Representation :
-            Robust System for Face Recognition from Down-sampled
-            Images</a> (Undergrad thesis)
+        <!-- Prof. Srinivasa Chakravarthy -->
+        <div class="recommendation-card">
+          <div class="rec-header">
+            <div class="rec-avatar"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="rec-info">
+              <h4>Prof. Srinivasa Chakravarthy</h4>
+              <span>Professor (Manager) @ IIT Madras</span>
+            </div>
+            <a href="https://www.linkedin.com/in/srinivasa-chakravarthy-a09b5131" target="_blank"><i
+                class="fab fa-linkedin linkedin-icon"></i></a>
           </div>
-          <div class=" mb-3"><h6>Supervisor: <a href="https://che.iitm.ac.in/?page_id=328">Prof. Arun K.
-            Tangirala</a> (Indian Institute of Technology, Madras)</h6></div>
-          <ul>
-            <li>Worked on image reconstruction using sparse optimization framework with adaptive dictionary learning.</li>
-            <li>Designed a centralized face recognition system using sparse optimization framework based
-              compressive sensing and haar-like classifier.
-            </li>
-            <li>Assisted a PhD student in implementing image reconstruction using adaptive dictionary
-              learning and sparse optimization framework.
-            </li>
-          </ul>
-        </div>
-        <div class="resume-date text-md-right">
-          <!-- <span class="text-primary">December 2017 - March 2018</span><br> -->
-          <span class="text-primary">May 2017 - March 2018</span><br>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Research Intern</h3>
-          <div class="subheading">Developing super-luminescent diode based multi-gas sensing technique in 1.5
-            &mu;m wavelength region
+          <div class="rec-body">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Ajith is one of the best research students I have had an opportunity to work with over the last decade.
+              It is enough if you ask him to do something – he would go at it with complete commitment... He is a
+              constant learner and reads extensively."</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">"With full faith in his
+              intelligence, hard work and personality, I strongly recommend him for any role offered to him."</p>
           </div>
-          <div class=" mb-3"><h6>Supervisor: <a href="http://iitm.irins.org/profile/50963">Prof. Nilesh J.
-            Vasa</a> (Indian Institute of Technology, Madras)</h6></div>
-          <ul>
-            <li>Worked on identifying the unknown constituents in a mixture of gas by passing through laser
-              and using MLP to classify the gases present
-              based on the frequency of laser absorbed.
-            </li>
-          </ul>
         </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">May 2016 - June 2016</span><br>
+
+        <!-- Tyler Lee -->
+        <div class="recommendation-card">
+          <div class="rec-header">
+            <div class="rec-avatar"><i class="fas fa-user-astronaut"></i></div>
+            <div class="rec-info">
+              <h4>Tyler Lee</h4>
+              <span>Team Lead @ RadiusAI</span>
+            </div>
+            <a href="https://www.linkedin.com/in/tlee75" target="_blank"><i
+                class="fab fa-linkedin linkedin-icon"></i></a>
+          </div>
+          <div class="rec-body">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Ajith is a highly skilled engineer who has an incredible ability to digest and comprehend even the most
+              complicated tasks... I would be pleased to have him on any team I work with in the future."</p>
+          </div>
         </div>
+
+        <!-- Pedro Ivo Raimundo -->
+        <div class="recommendation-card">
+          <div class="rec-header">
+            <div class="rec-avatar"><i class="fas fa-code"></i></div>
+            <div class="rec-info">
+              <h4>Pedro Ivo Raimundo</h4>
+              <span>Teammate @ Pegasystems</span>
+            </div>
+            <a href="https://www.linkedin.com/in/pedro-ivo-raimundo" target="_blank"><i
+                class="fab fa-linkedin linkedin-icon"></i></a>
+          </div>
+          <div class="rec-body">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Ajith is a brilliant engineer, and a great person. He is one of the most talented developers I've worked
+              with, and truly a hardworking colleague, always pushing for the best outcomes."</p>
+          </div>
+        </div>
+
+        <!-- John Biron -->
+        <div class="recommendation-card">
+          <div class="rec-header">
+            <div class="rec-avatar"><i class="fas fa-layer-group"></i></div>
+            <div class="rec-info">
+              <h4>John Biron</h4>
+              <span>Tech Architect @ Pegasystems</span>
+            </div>
+            <a href="https://www.linkedin.com/in/john-biron" target="_blank"><i
+                class="fab fa-linkedin linkedin-icon"></i></a>
+          </div>
+          <div class="rec-body">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Ajith demonstrated both a willingness and eagerness to jump into unfamiliar territory... He continues to
+              have a measurable positive effect on achieving the team goals even though he is part-time."</p>
+          </div>
+        </div>
+
+        <!-- Carlos M. Gonzales -->
+        <div class="recommendation-card">
+          <div class="rec-header">
+            <div class="rec-avatar"><i class="fas fa-user-tie"></i></div>
+            <div class="rec-info">
+              <h4>Carlos M. Gonzales</h4>
+              <span>Manager @ Pegasystems</span>
+            </div>
+            <a href="https://www.linkedin.com/in/cargonza" target="_blank"><i
+                class="fab fa-linkedin linkedin-icon"></i></a>
+          </div>
+          <div class="rec-body">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"He has engaged and collaborated with the team well... The team
+              appreciated his contribution to the overall team goals... He presented a couple of presentations to the
+              department VP which went well."</p>
+          </div>
+        </div>
+
+        <!-- Aravind Ram -->
+        <div class="recommendation-card">
+          <div class="rec-header">
+            <div class="rec-avatar"><i class="fas fa-user-check"></i></div>
+            <div class="rec-info">
+              <h4>Aravind Ram</h4>
+              <span>Manager @ Zoho Corp</span>
+            </div>
+            <a href="https://www.linkedin.com/in/aravindram" target="_blank"><i
+                class="fab fa-linkedin linkedin-icon"></i></a>
+          </div>
+          <div class="rec-body">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Ajith is an excellent programmer who enjoys and excels in a work environment. He is a team player... It
+              has been a pleasure to manage Ajith as he always knew the priorities and does the work on time."</p>
+          </div>
+        </div>
+
+        <!-- Maria Łysik -->
+        <div class="recommendation-card">
+          <div class="rec-header">
+            <div class="rec-avatar"><i class="fas fa-smile"></i></div>
+            <div class="rec-info">
+              <h4>Maria Łysik</h4>
+              <span>Teammate @ Pegasystems</span>
+            </div>
+            <a href="https://www.linkedin.com/in/maria-%C5%82ysik-814ab492" target="_blank"><i
+                class="fab fa-linkedin linkedin-icon"></i></a>
+          </div>
+          <div class="rec-body">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"I strongly recommend Ajith as a co-worker. He's disciplined, dedicated, open-minded, improvement-focused
+              and easy-going person."</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact & Footer -->
+  <section id="contact">
+    <div class="container fade-in">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="hero-description" style="margin: 0 auto 2rem auto;">
+        Currently leading the engineering effort at RadiusAI. Whether it’s a hobby project, an early-stage startup
+        ideas, a complex system architecture, or a new professional opportunity, I’m always open to a deep-dive
+        technical discussion.
+      </p>
+
+      <div style="margin-bottom: 2.5rem;">
+        <a href="https://calendar.app.google/ERrUh5pmmrZ5tKZh6" target="_blank" class="btn"
+          style="padding: 1rem 2rem; font-size: 1.1rem;">
+          <i class="fas fa-calendar-alt" style="margin-right: 0.5rem;"></i> Book an Appointment
+        </a>
       </div>
 
+      <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 3rem;">
+        <a href="https://www.linkedin.com/in/ajithkumar-natarajan/" target="_blank"
+          style="font-size: 2rem; color: var(--text-secondary);"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ajithkumar-natarajan/" target="_blank"
+          style="font-size: 2rem; color: var(--text-secondary);"><i class="fab fa-github"></i></a>
+        <a href="mailto:ajithknat@gmail.com" style="font-size: 2rem; color: var(--text-secondary);"><i
+            class="fas fa-envelope"></i></a>
+      </div>
     </div>
 
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Ajith Kumar Natarajan.</p>
+        <div id="last-modified" style="margin-top: 0.5rem; color: var(--accent-primary); font-size: 0.8rem;"></div>
+      </div>
+    </footer>
   </section>
 
-  <hr class="m-0">
+  <!-- Contact Bubble Widget -->
+  <div class="contact-widget">
+    <button id="contact-toggle" class="contact-btn" aria-label="Contact Me">
+      <i class="fas fa-comment-dots"></i>
+    </button>
 
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="technical_skills">
-    <div class="my-auto">
-
-      <h2 class="mb-5">Technical skills</h2>
-      <div class="subheading mb-3">Programming languages</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          Java
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          Groovy
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          Python
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          Shell Script
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          Terraform
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          MATLAB
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          C++
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          C
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          R
-        </li>
-      </ul>
-      <br>
-
-      <div class="subheading mb-3">Web Technologies</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          HTML
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          CSS
-        </li>
-        <li>
-          <i class="fa-li fa fa-check text-warning"></i>
-          JavaScript
-        </li>
-      </ul>
-      <br>
+    <div id="contact-modal" class="contact-modal">
+      <div class="contact-header">
+        <h3>Send a Message</h3>
+        <button id="contact-close" class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="How can I help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-full">Send Message</button>
+      </form>
     </div>
-
-    <div class="subheading mb-3">Tools</div>
-    <ul class="fa-ul mb-0">
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Jenkins
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Android Studio
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Amazon Web Services (AWS)
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Git
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Kubernetes
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Docker
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Helm
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Google Cloud Platform (GCP)
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        TensorFlow, Keras
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        PyTorch
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        OpenCV
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        RStudio
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Simulink, NI LabVIEW, Proteus, Keil, iThink
-      </li>
-    </ul>
-
-    <br>
-
-
-    <div class="subheading mb-3">Microcontrollers</div>
-    <ul class="fa-ul mb-0">
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Raspberry Pi
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Arduino Uno
-      </li>
-      <li>
-        <i class="fa-li fa fa-check text-warning"></i>
-        Arduino Mega
-      </li>
-    </ul>
-    <br>
-
-    <div class="subheading mb-3">Operating systems</div>
-    <ul class="list-inline dev-icons">
-      <li class="list-inline-item">
-        <i class="fab fa-linux"></i>
-      </li>
-      <li class="list-inline-item">
-        <i class="fab fa-apple"></i>
-      </li>
-      <li class="list-inline-item">
-        <i class="fab fa-windows"></i>
-      </li>
-    </ul>
-    <br>
-  </section>
-
-  <hr class="m-0">
-
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="academic_projects">
-    <div class="my-auto">
-      <h2 class="mb-5">Academic Projects</h2>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Replication of Dynamo DB (Using Java, SQL, XML) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE586-DS/tree/master/PA4">Source Code</a>] [<a
-            href="https://drive.google.com/file/d/1lZJIqJberTkqgTKinpK4H6n44lunlNAR/view?usp=sharing">Video</a>]
-        </li>
-        <ul>
-          <li>Replicated the functionality of Amazon Dynamo DB by designing a persistent key-value storage.
-          </li>
-          <li>Any key-value data inserted will be replicated across multiple databases.</li>
-          <li>It supported edge cases such as inserting, querying and failure of an instance in random
-            sequence.
-          </li>
-          <li>Once the failed node comes up alive it interacts with other nodes and replicated all the
-            key-value pairs.
-          </li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Group Messenger with Ordering Guarantees (Using Java, SQL, XML) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE586-DS/tree/master/PA2B">Source Code</a>]
-        </li>
-        <ul>
-          <li>Implemented a multicast mechanism to build a group messenger that can send messages to multiple
-            AVDs (Used fixed set of ports & socket).
-          </li>
-          <li>A DB based content provider was used to store the messages.</li>
-          <li>Engineered FIFO and total order guarantees. ISIS based algorithm was used for guaranteeing total
-            order.
-          </li>
-          <li>Handled failure of an app instance in the middle of execution.</li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Chord based Distributed Hash Table (Using Java, SQL, XML) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE586-DS/tree/master/PA3">Source Code</a>]
-        </li>
-        <ul>
-          <li>Designed a Distributed Hash Table (DHT) that supported ID space partitioning/re-partitioning.
-          </li>
-          <li>When a data was to be written or fetched a ring-based routing mechanism was followed.</li>
-          <li>The DHT was designed to handle node joins and disjoins in the middle of execution.</li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Complete Information Retrieval system (Using Python, JavaScript, HTML) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE535-IR-Project4">Source Code</a>] [<a
-            href="https://drive.google.com/file/d/13nM9lsQiLf-YdPzqMnJCytWCdQQ48EwU/view?usp=sharing">Video</a>]
-        </li>
-        <ul>
-          <li>Built a complete information retrieval system from scratch and hosted (in AWS).</li>
-          <li>Tweets of several celebraties were scrapped and was used as the input text corpus.</li>
-          <li>LDA model was built to evaluate relevance of search query and return the results.</li>
-          <li>Sentiment analysis of tweets was done using NLP techniques.</li>
-          <li>HTML and JavaScript were used to implement the UI.</li>
-          <li>The UI consisted of various filtering & sorting options. Data clouds were also built to
-            visualize the dataset and search results.
-          </li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Panoramic Image builder (Using Python and OpenCV) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE573-CVIP/tree/master/Project-2">Source Code</a>]
-        </li>
-        <ul>
-          <li>Detected the corners of structures in input image using Harris detector.</li>
-          <li>Used SIFT descriptor to extract features of the detected keypoints.</li>
-          <li>Wrote RANSAC algorithm to compute the homographic matrix and stitch the images.</li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Classification system using Neural Networks for <i>Fashion-MNIST dataset</i> (Using Python, Keras
-          and TensorFlow) [<a href="https://github.com/ajithkumar-natarajan/CSE574-IML/tree/master/Project-3">Source
-          Code</a>]
-        </li>
-        <ul>
-          <li>Built a neural network without using any high-level machine learning libraries.</li>
-          <li>Implemented batch normalization on the network; Studied the effect of hyperparameteres such as
-            learning rate, number of epochs, number of hidden layers, number of nodes in the hidden layers
-            etc.; The network produced an accuracy of 85%.
-          </li>
-          <li>Modeled a CNN using Keras on top of TensorFlow; Implemeted mini-batch gradient descent
-            optimization and dropout regularization; This network gave an accuracy of 92%.
-          </li>
-          <li>Built an Auto-Encoder based K-Means clustering model & Gaussian Mixture Model to cluster the
-            condensed representation of the dataset.
-          </li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Image Segmentation using K-Means Clustering (Using Python and OpenCV) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE573-CVIP/tree/master/Project-3">Source Code</a>]
-        </li>
-        <ul>
-          <li>Designed a program that outputs the best clustering result for a given 'K' value.</li>
-          <li>Clustering was done only based on Euclidean distance of pixel values.</li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Grid Navigation using Reinforcement Learning (Using Pythonand OpenAI Gym) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE574-IML/tree/master/Project-4">Source Code</a>]
-        </li>
-        <ul>
-          <li>Built a reinforcement learning agent that navigates a 4x4 grid-world environment.</li>
-          <li>Q-Learning was implemented for the agent to learn the optimal policy.</li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Tuning of Information Retrieval model (Using Python) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE535-IR/tree/master/Project-3">Source Code</a>]
-        </li>
-        <ul>
-          <li>Implemented probabilistic models of IR (BM25, Divergence from Randomness and Language model) in
-            Solr.
-          </li>
-          <li>Tuned the model performance by using techniques such as query boosting and tweaking model
-            parameters.
-          </li>
-          <li>Evaluated the performance of the models using trec_eval software.</li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Simple Boolean model Information Retrieval system (Using Python) [<a
-            href="https://github.com/ajithkumar-natarajan/CSE535-IR/tree/master/Project-2">Source Code</a>]
-        </li>
-        <ul>
-          <li>Built a command-line based information retrieval system that supports Boolean queries.</li>
-          <li>Designed the system to build an inverted index by doing basic preprocessing on the input text
-            corpus.
-          </li>
-          <li>Implemented Document-at-a-time retrieval method to generate the output to input queries.</li>
-          <li>TF-IDF statistic was used to rank the resulting documents.</li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Design and development of hardware and software (PC and Android application) of a Modern Smart
-          Vehicle (Human-Machine interface) (Using NI LabVIEW, Android Studio, Python, Java and Raspberry Pi)
-          [<a href="https://github.com/ajithkumar-natarajan/eyrc4305">Source Code</a>]
-        </li>
-        <ul>
-          <li>Developed a PC & mobile application and interfaced it with a prototype of an electronic car to
-            control the vehicle remotely and also to monitor certain real-time information from sensors such
-            as camera feed, speed and battery power remaining.
-          </li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Road Safety Enhancement System for Automobiles by studying EEG waves (<i>Funded by the Centre For
-          Technology Development and Transfer, Anna University</i>) (Using Python, Java, Android Studio and
-          Raspberry Pi)
-        </li>
-        <ul>
-          <li>Constructed a neural network with an accuracy of 76% that inputs Electroencephalography (EEG)
-            waves of the driver from NeuroSky mindwave headset to regress the sleepiness of the driver.
-          </li>
-          <li>Fused the output from the neural network with the percentage of closure (PERCLOS) of eyes
-            measured through a camera mounted on the dashboard to determine the state of the driver.
-          </li>
-          <li>If the driver is found to be sleepy he/she would be alerted and guided to the nearest
-            restaurant.
-          </li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Prognosis of Breast Cancer and Diagnosis of Tumour Malignancy through Multiple Machine Learning Data
-          Mining (MLDM) Techniques (<i>Practicum requirement</i>) (Using MATLAB)
-        </li>
-        <ul>
-          <li>Implemented Naïve Bayes (91% accuracy) and Decision tree (89% accuracy) classifiers to segregate
-            the breast cancer dataset collected from Hindu mission hospital, Chennai, India into malignant
-            and benign.
-          </li>
-        </ul>
-        <br>
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Mini-projects like pre-skid alerter (Using 3-axis accelerometer module & ATmega2560); Heart Rate
-          Computation from ECG signal analysis (Using MATLAB); Autonomous Trolley Billing system (Using
-          ATmega328P) <i>and multiple other minor projects.</i></li>
-      </ul>
-      <br>
-      <h3 class="mb-3">Hackathons</h3>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          Pega Hackathon</a>
-        </li>
-        <ul>
-          <li>Created a cronjob that will keep looking at different cloud provider accounts for resource usage.</li>
-          <li>When the job detects that the quota threshold is about to be reached, a bot posts the alert in the internal team communication channel.</li>
-          <li>A quota increase request can be submitted at the click of a button directly from the bot's message.</li>
-        </ul>
-      </ul>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          <a href="https://devpost.com/software/kinshield">KinShield</a> (Using Python, Java, JavaScript, HTML, CSS, Firebase, GCP, Android) [<a href="https://github.com/ajithkumar-natarajan/SFHacks_2021">Source Code</a>]
-        </li>
-        <ul>
-          <li>Built a Covid recovery portal (Web and Android) to facilitate kids and old adults. The application tracks the hygiene practices of kids.</li>
-          <li>In cases of adults, the application can be used to get notified when there is a vaccine appointment available at one of the nearby pharmacies if they meet the state criteria.</li>
-        </ul>
-      </ul>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-project-diagram text-warning"></i>
-          <a href="https://devpost.com/software/home-management">Home management</a> (Using Python, JavaScript,
-          HTML, CSS) [<a href="https://github.com/ajithkumar-natarajan/BrickHack-Hackathon">Source Code</a>]
-        </li>
-        <ul>
-          <li>Built an IoT system with sensors monitoring the availability of household products.</li>
-          <li>When the supply ran low, the item was added to the shopping cart of the user. This was
-            facilitated using Wegmans' API.
-          </li>
-          <li>The website consisted of statistical visualization of the weekly and monthly purchases.</li>
-        </ul>
-      </ul>
-    </div>
-  </section>
-</div>
-</section>
-
-<hr class="m-0">
-
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="certifications">
-  <div class="my-auto">
-    <h2 class="mb-5">Certifications &amp; Training</h2>
-    <ul class="fa-ul mb-0">
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        <!-- <a href="https://verify.skilljar.com/c/2bzvtq3fi6dn" style="color: #E5E5E5;">Jenkins (CloudBees) (Jul 2020)</a></li> -->
-        <a href="https://verify.skilljar.com/c/2bzvtq3fi6dn">Jenkins (CloudBees) (Jul 2020)</a></li>
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        <!-- <a href="https://linuxacademy.com/profile/u/cert/id/353496" style="color: #E5E5E5;">Containers (Linux Academy) (Jul 2020)</a></li> -->
-        <a href="https://linuxacademy.com/profile/u/cert/id/353496">Containers (Linux Academy) (Jul 2020)</a>
-      </li>
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        <!-- <a href="https://www.coursera.org/account/accomplishments/certificate/4EBT86CTZW9G" style="color: #E5E5E5;">Machine Learning (Stanford University) (Jan 2020-Apr 2020)</a></li> -->
-        <a href="https://www.coursera.org/account/accomplishments/certificate/4EBT86CTZW9G">Machine Learning
-          (Stanford University) (Jan 2020-Apr 2020)</a></li>
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        <!-- <a href="https://www.coursera.org/account/accomplishments/certificate/KMS2BXE8FU5Z" style="color: #E5E5E5;">Linear Algebra - (Imperial College of London) (Dec 2019-Mar 2020)</a></li> -->
-        <a href="https://www.coursera.org/account/accomplishments/certificate/KMS2BXE8FU5Z">Linear Algebra -
-          (Imperial College of London) (Dec 2019-Mar 2020)</a></li>
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        Analysis and Interpretation of Biological Data (Indian Institute of Technology, Madras) (Jan 2019-May
-        2019)
-      </li>
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        Winter course on Machine Intelligence and Brain Research (Indian Institute of Technology, Madras) (Jan
-        2019)
-      </li>
-      <!-- <li>
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        1<sup>st</sup>
-        Place - University of Colorado Boulder - Emerging Tech Competition 2009</li> -->
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        Introduction to Statistical Hypothesis Testing (Indian Institute of Technology, Madras) (Jun 2017-Jul
-        2017)
-      </li>
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        Introduction to Algorithms & Data Structures (Massachusetts Institute of Technology) (Jan 2017-May 2017)
-      </li>
-      <li>
-        <i class="fa-li fa fa-award text-warning"></i>
-        Scilab for Engineers (Indian Institute of Technology, Bombay) (Dec 2015-Jan 2016) (Certified)
-      </li>
-    </ul>
   </div>
-</section>
 
-<hr class="m-0">
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-  <div class="my-auto">
-    <h2 class="mb-5">Awards</h2>
-    <ul class="fa-ul mb-0">
-      <li>
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Received the best intern student award in Zoho corporation during the year 2017-18
-      </li>
-      <li>
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Scored 90% in NPAT – A national level programming contest conducted by NPTEL in collaboration with ACM
-        and Google
-      </li>
-      <li>
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Pre-finalist, e-Yantra Robotic Competition – A National level competition organised by IIT Bombay and
-        Ministry of Human Resource Development, India
-      </li>
-      <li>
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Pre-finalist, NIYANTRA – A National level design and development competition organised by National
-        Instruments
-      </li>
-      <li>
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Secured 1<sup>st</sup> place in C-Debugging and 2<sup>nd</sup> prize in Idea presentation, held in
-        Livebeat – An intra-college technical symposium in MIT, Chennai
-      </li>
-    </ul>
-  </div>
-</section>
-
-<hr class="m-0">
-
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="activities">
-  <div class="my-auto">
-    <h2 class="mb-5">Activities and Societies</h2>
-    <ul class="fa-ul mb-0">
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        Actively participated in employee resource groups for diversity and well-being at Pegasystems
-      </li>
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        President, CSMIT 2018 Tech team, MIT Campus, Anna university, India
-      </li>
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        President of workshop team Intecho 2018, MIT Campus, Anna university, India
-      </li>
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        Vice President, Robotics club (2017) of MIT Campus, Anna university, India
-      </li>
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        Department Senator during the course of college
-      </li>
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        Certified as A-graded individual in National Cadet Corps (NCC)
-      </li>
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        Student member of Nethrodaya, club to help visually challenged
-      </li>
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        Student member of Google Developer Student Clubs (DSC), Association for Computing Machinery (ACM),
-        Invenst and DivTech in the University at Buffalo
-      <li>
-        <i class="fa-li fa fa-shield-alt text-warning"></i>
-        Regular blood donor
-      </li>
-    </ul>
-  </div>
-</section>
-
-</div>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/resume.min.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,8 @@ body {
   padding-top: 54px;
   background: #252827;
   background-image: url(../img/texture.png);
-  color: #E5E5E5;/*CHECK*/
+  color: #E5E5E5;
+  /*CHECK*/
 }
 
 @media (min-width: 992px) {
@@ -27,8 +28,9 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
-/*   text-transform: uppercase; */
-  color: #FFFFFF;/*CHECK*/
+  /*   text-transform: uppercase; */
+  color: #FFFFFF;
+  /*CHECK*/
 }
 
 h1 {
@@ -50,20 +52,22 @@ p.lead {
 }
 
 .subheading {
-/*   text-transform: uppercase; */
+  /*   text-transform: uppercase; */
   font-weight: 500;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
 }
-.subheading a{
+
+.subheading a {
   color: #FFFFFF;
 }
 
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
-  width: 3.5rem;42b983
-  background-color: #CCCCCC;/*CHECK*/
+  width: 3.5rem;
+  background-color: #CCCCCC;
+  /*CHECK*/
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -77,7 +81,8 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #42b983;/*CHECK*/
+  background-color: #42b983;
+  /*CHECK*/
 }
 
 .dev-icons {
@@ -85,7 +90,8 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #42b983;/*CHECK*/
+  color: #42b983;
+  /*CHECK*/
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -114,6 +120,7 @@ p.lead {
     width: 17rem;
     height: 100vh;
   }
+
   #sideNav .navbar-brand {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -121,11 +128,13 @@ p.lead {
     margin: auto auto 0;
     padding: 0.5rem;
   }
+
   #sideNav .navbar-brand .img-profile {
     max-width: 12rem;
     max-height: 12rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
+
   #sideNav .navbar-collapse {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -139,6 +148,7 @@ p.lead {
     width: 100%;
     margin-bottom: auto;
   }
+
   #sideNav .navbar-collapse .navbar-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -146,9 +156,11 @@ p.lead {
     flex-direction: column;
     width: 100%;
   }
+
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
+
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
@@ -168,6 +180,7 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     min-height: 100vh;
   }
+
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
@@ -181,31 +194,40 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #42b983 !important; /*CHECK*/
+  background-color: #42b983 !important;
+  /*CHECK*/
 }
 
 .text-primary {
-  color: #42b983 !important; /*CHECK*/
+  color: #42b983 !important;
+  /*CHECK*/
 }
 
 a {
-  color: #42b983; /*CHECK*/
+  color: #42b983;
+  /*CHECK*/
 }
 
-a:hover, a:focus, a:active {
-  color: #42b983; /*CHECK*/
+a:hover,
+a:focus,
+a:active {
+  color: #42b983;
+  /*CHECK*/
 }
 
 /* START TOOLTIP STYLES */
 [tooltip] {
-  position: relative; /* opinion 1 */
+  position: relative;
+  /* opinion 1 */
 }
 
 /* Applies to all tooltips */
 [tooltip]::before,
 [tooltip]::after {
-  text-transform: none; /* opinion 2 */
-  font-size: .9em; /* opinion 3 */
+  text-transform: none;
+  /* opinion 2 */
+  font-size: .9em;
+  /* opinion 3 */
   line-height: 1;
   user-select: none;
   pointer-events: none;
@@ -213,18 +235,23 @@ a:hover, a:focus, a:active {
   display: none;
   opacity: 0;
 }
+
 [tooltip]::before {
   content: '';
-  border: 5px solid transparent; /* opinion 4 */
-  z-index: 1001; /* absurdity 1 */
+  border: 5px solid transparent;
+  /* opinion 4 */
+  z-index: 1001;
+  /* absurdity 1 */
 }
+
 [tooltip]::after {
-  content: attr(tooltip); /* magic! */
-  
+  content: attr(tooltip);
+  /* magic! */
+
   /* most of the rest of this is opinion */
   font-family: Helvetica, sans-serif;
   text-align: center;
-  
+
   /* 
     Let the content set the size of the tooltips 
     but this will also keep them from being obnoxious
@@ -239,7 +266,8 @@ a:hover, a:focus, a:active {
   box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
   background: #333;
   color: #fff;
-  z-index: 1000; /* absurdity 2 */
+  z-index: 1000;
+  /* absurdity 2 */
 }
 
 /* Make the tooltips respond to hover */
@@ -261,10 +289,12 @@ a:hover, a:focus, a:active {
   border-bottom-width: 0;
   border-top-color: #333;
 }
+
 [tooltip]:not([flow])::after,
 [tooltip][flow^="up"]::after {
   bottom: calc(100% + 5px);
 }
+
 [tooltip]:not([flow])::before,
 [tooltip]:not([flow])::after,
 [tooltip][flow^="up"]::before,
@@ -279,9 +309,11 @@ a:hover, a:focus, a:active {
   border-top-width: 0;
   border-bottom-color: #333;
 }
+
 [tooltip][flow^="down"]::after {
   top: calc(150% + 5px);
 }
+
 [tooltip][flow^="down"]::before,
 [tooltip][flow^="down"]::after {
   left: 50%;
@@ -296,6 +328,7 @@ a:hover, a:focus, a:active {
   left: calc(0em - 5px);
   transform: translate(-.5em, -50%);
 }
+
 [tooltip][flow^="left"]::after {
   top: 50%;
   right: calc(100% + 5px);
@@ -310,6 +343,7 @@ a:hover, a:focus, a:active {
   right: calc(0em - 5px);
   transform: translate(.5em, -50%);
 }
+
 [tooltip][flow^="right"]::after {
   top: 50%;
   left: calc(100% + 5px);
@@ -331,7 +365,7 @@ a:hover, a:focus, a:active {
   }
 }
 
-/* FX All The Things */ 
+/* FX All The Things */
 [tooltip]:not([flow]):hover::before,
 [tooltip]:not([flow]):hover::after,
 [tooltip][flow^="up"]:hover::before,
@@ -341,9 +375,116 @@ a:hover, a:focus, a:active {
   animation: tooltips-vert 300ms ease-out forwards;
 }
 
+.social-icons-container {
+  margin-left: 40%;
+}
+
+.hackathon-header {
+  grid-column: 1 / -1;
+  margin-top: 2rem;
+  border: none;
+  background: none;
+}
+
+
 [tooltip][flow^="left"]:hover::before,
 [tooltip][flow^="left"]:hover::after,
 [tooltip][flow^="right"]:hover::before,
-[tooltip][flow^="right"]:hover::after {
-  animation: tooltips-horz 300ms ease-out forwards;
+
+/* Projects Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  /* Slight glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #42b983;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #42b983;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.project-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  /* Pushes footer down */
+}
+
+.project-card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #d1d1d1;
+}
+
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.project-btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  background: rgba(66, 185, 131, 0.1);
+  /* Low opacity prompt color */
+  color: #42b983 !important;
+  transition: background 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-btn:hover {
+  background: rgba(66, 185, 131, 0.2);
+  text-decoration: none;
+}
+
+.project-btn i {
+  font-size: 1rem;
+}
+
+/* Helper Classes replacing inline styles */
+.navbar-brand-custom {
+  position: relative;
+}
+
+.navbar-toggler-custom {
+  position: relative;
+}
+
+.navbar-collapse-custom {
+  position: relative;
+  text-align: center;
+}
+
+.footer-date {
+  color: white;
+  font-weight: bold;
 }
