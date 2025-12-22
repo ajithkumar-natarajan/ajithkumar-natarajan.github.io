@@ -27,15 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Add visible class styling dynamically
-    const styleSheet = document.createElement("style");
-    styleSheet.innerText = `
-        .visible {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-    `;
-    document.head.appendChild(styleSheet);
+
 
 
     // Smooth Scrolling for Anchors
@@ -154,10 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let scrollPos = 0;
         let isPaused = false;
+        let isVisible = false; // Track visibility
         const speed = 0.5; // Pixels per frame
 
         function autoScroll() {
-            if (!isPaused) {
+            if (!isPaused && isVisible) {
                 scrollPos += speed;
                 // If scrolled past the first set of cards (halfway), reset to 0
                 if (scrollPos >= recContainer.scrollWidth / 2) {
@@ -180,12 +173,16 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollPos = recContainer.scrollLeft;
         });
 
-        // Start scrolling
-        // requestAnimationFrame(autoScroll); // Disabled for now as it fights with user scroll. 
-        // Better implementation: CSS Animation or careful JS. 
-        // Let's stick to CSS Keyframes for smoother marquee if user wants "automatic".
-        // But for swiping + clicking links, JS is safer.
+        // Intersection Observer to pause when off-screen
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isVisible = entry.isIntersecting;
+            });
+        }, { rootMargin: "100px" }); // Preload/play slightly before visible
 
+        scrollObserver.observe(recContainer);
+
+        // Start scrolling
         autoScroll();
     }
 });
