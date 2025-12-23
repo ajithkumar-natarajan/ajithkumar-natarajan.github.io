@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.disabled = true;
 
             // These IDs from the user's EmailJS dashboard
-            const serviceID = 'YOUR_SERVICE_ID';
-            const templateID = 'YOUR_TEMPLATE_ID';
+            const serviceID = 'svc_ajithnat.is-a.dev';
+            const templateID = 'tmpl_portfolio_contact';
 
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
